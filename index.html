@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style type="text/css">
+        h1{
+            padding:20px;
+            font-size:20px;
+            margin-bottom:10px;
+                   }
+    </style>
 <title>HUU_HUYNH_StreamVideos</title>
 <script src="jquery.js"></script>
 <script src="peer.js"></script>
 <script src="socket.io.js"></script>
 </head>
-<body> 
-<h1>HUU HUYNH StreamVideos</h1>
+<body background="C:\Users\Admin\Desktop\201418451e98-5fba-4e4d-ac72-641dee83e5c7.jpeg">
+<h1 style="background-color: #FFA500;  font-size: 60px ">
+<img src="C:\Users\Admin\Desktop\avatar.png" width ="100px" height="auto">HUU HUYNH STREAM</h1>
 <div id="div-chat">    
+
+<h2 id ="my-peer">Your Id:</h2>
+<img src="C:\Users\Admin\Desktop\bdvn1.gif" width="300px" height="auto">
+<video id="localStream" width="300" controls></video>
+
+<video id="remoteStream" width="300" controls></video>
 <p><h3>Online User</h3></p>
     <ul id ="ulUser"></ul>
-<h2 id ="my-peer">Your Id:</h2>
-<video id="localStream" width="300" controls></video>
-<br /><br />
-<video id="remoteStream" width="300" controls></video>
+
 <br /><br />
 <input type="text" id="remoteId" placeholder="Remote ID">
 <button id="btnCall">Call</button>
